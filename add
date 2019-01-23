@@ -1,0 +1,15 @@
+//It finds the simply adds two numbers
+
+echo "enter a"
+read a
+echo "enter b"
+read b
+echo "enter parameter"
+read c
+echo $a'x^2 +' $b'x +' $c
+echo enter parameter
+read x
+g=`expr $a \* $x \* $x`
+h=`expr $b \* $x`
+k=`expr $g + $h + $c`
+echo $k
