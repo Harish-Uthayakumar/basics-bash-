@@ -1,0 +1,3 @@
+ls > tempstore
+myVar=($(wc -l tempstore))
+echo `expr $myVar - 1`
