@@ -1,0 +1,23 @@
+echo enter a number
+read number
+sum=0
+while [[ $number -gt 0 ]]
+ do
+
+	m=`expr $number % 2`
+	
+	
+
+	sum=`expr $sum \* 10 + $m`
+	echo $m
+if [[ $m -eq 0 ]]
+then
+	sum=`expr $sum \* 10`
+fi
+	#statements
+
+	number=`expr $number / 2`
+
+	#statements
+done
+echo $sum
