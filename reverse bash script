@@ -1,0 +1,14 @@
+if [ $# -ne 1 ]
+then
+	echo this is not fair $0
+fi
+n=$1
+rev=0
+sh=0
+while [ $n -gt 0 ]
+do
+  sh=`expr $n % 10`
+  rev=`expr $rev \* 10 + $sh`
+  n=`expr $n / 10`
+done
+echo $rev
