@@ -1,0 +1,37 @@
+
+while [[ i -eq "y" ]]
+do
+	#statements
+echo enter one of the following options
+echo "1) addition"
+echo "2) subtraction"
+echo "3) multiplication"
+echo "4) division"
+read choice
+echo enter number1
+read number1
+echo enter number2
+read number2
+
+case $choice in
+	1)      echo `expr $number1 + $number2`;;
+2) echo `expr $number1 - $number2`;;
+3) echo `expr $number1 \* $number2`;;
+4) echo `expr $number1 / $number2`;;
+*) echo 'inavalid number';;
+esac
+echo do you eant to continue
+read continue
+if [ $continue != "y" ]
+then
+
+	exit
+fi
+done
+
+
+    
+
+
+	
+
