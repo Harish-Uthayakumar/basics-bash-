@@ -1,0 +1,3 @@
+echo enter the number
+read number
+echo "obase=2;$number"| bc
